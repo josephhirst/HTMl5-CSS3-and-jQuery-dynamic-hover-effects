@@ -1,0 +1,211 @@
+/* ---------- CSS reset ---------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+	
+/* ---------- style ----------*/
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+body {
+	
+	background: url('../imgs/bg.png');	
+}
+
+header h1 {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 25px;
+	background: none;
+	padding: 30px;
+	border-radius: 0px;
+}
+
+
+.inner-container, .container{
+    position: relative;
+    width: 930px;
+    margin: 30px auto;
+}
+
+
+.inner-container:before,
+.inner-container:after {
+    content:"";
+    display:table;
+}
+
+.inner-container:after {
+    clear:both;
+}
+
+
+.inner-container article{
+    display: block;
+	width: 180px;
+	height: 220px;
+	background: #fff;
+	cursor: pointer;
+	float: left;
+	border: 10px solid #fff;
+	text-align: left;
+	text-transform: none;
+	margin: 15px;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	box-shadow: 
+		0px 0px 0px 10px rgba(255,255,255,1), 
+		1px 1px 3px 10px rgba(0,0,0,0.2);
+	-webkit-transition: 
+		opacity 0.4s linear, 
+		-webkit-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	-moz-transition: 
+		opacity 0.4s linear, 
+		-moz-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	-o-transition: 
+		opacity 0.4s linear, 
+		-o-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	-ms-transition: 
+		opacity 0.4s linear, 
+		-ms-transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+	transition: 
+		opacity 0.4s linear, 
+		transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+
+}
+
+
+.inner-container h3 {
+	font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+	margin-bottom: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 0px 0px 0px #000;
+    opacity: 0.8;
+}
+
+.inner-container article p{
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    color: #333;
+    text-shadow: 0px 0px 0px #000;
+    opacity: 0.8;	
+}
+
+
+
+.inner-container h3,
+.inner-container article p{
+    transition:
+        opacity 0.2s linear,
+        text-shadow 0.5s ease-in-out,
+        color 0.5s ease-in-out;
+	-webkit-transition: 
+		opacity 0.2s linear, 
+		text-shadow 0.5s ease-in-out, 
+		color 0.5s ease-in-out;
+	-moz-transition: 
+		opacity 0.2s linear, 
+		text-shadow 0.5s ease-in-out, 
+		color 0.5s ease-in-out;
+	-o-transition: 
+		opacity 0.2s linear, 
+		text-shadow 0.5s ease-in-out, 
+		color 0.5s ease-in-out;
+	-ms-transition: 
+		opacity 0.2s linear, 
+		text-shadow 0.5s ease-in-out, 
+		color 0.5s ease-in-out;	
+}
+
+
+.inner-container article.blur{
+    box-shadow: 0px 0px 20px 10px #ddd;
+    -webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-ms-transform: scale(0.8);;
+	transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.inner-container article.blur h3 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.5;
+}
+
+.inner-container article.blur  p{
+    text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
+    color: rgba(51, 51, 51, 0);
+    opacity: 0.5;
+}
+
+
+
+.inner-container article.active{
+   -webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+    box-shadow:
+        0px 0px 0px 10px rgba(255,255,255,1),
+        1px 11px 15px 10px rgba(0,0,0,0.4);
+    z-index: 100;
+    opacity: 1;
+}
+
+.inner-container article.active h3,
+.inner-container article.active p{
+    opacity; 1;
+}
+
+article p.client-name {
+	float: left;
+	color: #BABABA;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 30px;	
+}
